@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +12,8 @@
 .navbar{
   background: linear-gradient(#bfc0c7, rgb(18, 3, 96), blue);
   display: flex;
+  font-family: Andika, Helvetica, sans-serif;
+  font-weight: bold;
   justify-content: space-around;
 }
 
@@ -27,7 +33,7 @@
 
 .navbar a{
  color: white;
- font-size: 1.3rem;
+ font-size: 1.5rem;
  padding: 1rem;
  text-decoration: none;
 }
