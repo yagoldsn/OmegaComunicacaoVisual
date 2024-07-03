@@ -6,40 +6,14 @@
   --color-meio:rgb(18, 3, 96);
   --color-final: blue;
   --gradiente:linear-gradient(var(--color-inicial),var(--color-meio),var(--color-final));
+  --color-secundary: rgb(254, 128, 68,1 );
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Andika, Helvetica, sans-serif;
   }
 
-
-.navbar{
-  background:var(--gradiente);
-  display: flex;
-  font-family: Andika, Helvetica, sans-serif;
-  font-weight: bold;
-  justify-content: space-around;
-}
-
-.navbar img{
-  height: 5rem;
-}
-
-.navbar menu-nav{
-  display: block;
-}
-
-.navbar ul{
-  display: flex;
-  list-style: none;
-  margin-top: 2rem;
-}
-
-.navbar a{
- color: white;
- font-size: 1.5rem;
- padding: 1rem;
- text-decoration: none;
-}
+  /* background:var(--gradiente); */
