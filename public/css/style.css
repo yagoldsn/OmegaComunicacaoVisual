@@ -49,18 +49,27 @@
   .nav-link:hover{
     color: var(--color-secundary);
   }
-  .menu-mobile{
+  .menu-mobile-icon{
     display: none;
   }
-  .menu-mobile i{
+  .menu-mobile-icon i{
     color: #fff;
     font-size: 1.5rem;
     padding: 0.5rem;
   }
-
+.menu-mobile{
+  background: var(--gradiente);
+  display:none;
+}
+.menu-mobile ul{
+  list-style: none;
+}
   /* responsividade inicio */
 
+  @media screen and (max-width: 730px){
+    
+  }
 
 
-  
+
   /* responsividade fim */
