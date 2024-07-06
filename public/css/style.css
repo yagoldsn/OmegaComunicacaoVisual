@@ -67,7 +67,22 @@
   /* responsividade inicio */
 
   @media screen and (max-width: 730px){
-    
+    .navbar{
+      padding: 0.5rem 2rem;
+    }
+    .nav-logo img{
+    height:4rem;
+    }
+    .nav-list{
+      display: none;
+    }
+    .nav-login{
+      display: none;
+    }
+    .menu-mobile-icon{
+      align-items: center;
+      display: flex;
+    }
   }
 
 
