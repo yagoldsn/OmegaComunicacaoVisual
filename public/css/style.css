@@ -1,90 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-:root{
-  --color-inicial:#bfc0c7;
-  --color-meio:rgb(18, 3, 96);
+:root {
+  --color-inicial: #bfc0c7;
+  --color-meio: rgb(18, 3, 96);
   --color-final: blue;
-  --gradiente:linear-gradient(var(--color-inicial),var(--color-meio),var(--color-final));
+  --gradiente: linear-gradient(
+    var(--color-inicial),
+    var(--color-meio),
+    var(--color-final)
+  );
   --color-secundary: orangered;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Andika, Helvetica, sans-serif;
-  }
-
-  .navbar{
-    background:var(--gradiente);
-    box-shadow: 0px 3px 10px var(--color-meio);/*serve para adicionar uma sombra*/
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 3rem;
-  }
-  .nav-logo{
-    align-items: center;
-    display: flex;
-  }
-  .nav-logo img{
-    height: 5rem;
-  }
-  .nav-list{
-    align-items: center;
-    display: flex;
-  }
-  .nav-list ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
-  .nav-item{
-    margin: 0 15px;
-  }
-  .nav-link{
-    color: #fff;
-    font-size: 1.15rem;
-    text-decoration: none;
-  }
-  .nav-link:hover{
-    color: var(--color-secundary);
-  }
-  .menu-mobile-icon{
-    display: none;
-  }
-  .menu-mobile-icon i{
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-.menu-mobile{
-  background: var(--gradiente);
-  display:none;
+  margin: 0;
+  padding: 0;
+  font-family: Andika, Helvetica, sans-serif;
 }
-.menu-mobile ul{
+
+.navbar {
+  background: var(--gradiente);
+  box-shadow: 0px 3px 10px var(--color-meio); /*serve para adicionar uma sombra*/
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+.nav-logo {
+  align-items: center;
+  display: flex;
+}
+.nav-logo img {
+  height: 5rem;
+}
+.nav-list {
+  align-items: center;
+  display: flex;
+}
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+.nav-item {
+  margin: 0 15px;
+}
+.nav-link {
+  color: #fff;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--color-secundary);
+}
+.nav-login {
+  margin-left: auto;
+}
+.menu-mobile-icon {
+  display: none;
+}
+.menu-mobile-icon i {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.menu-mobile {
+  background: var(--color-meio);
+  display: none;
+}
+.menu-mobile ul {
   list-style: none;
 }
-  /* responsividade inicio */
+.menu-mobile .nav-login {
+  display: grid;
+}
 
-  @media screen and (max-width: 730px){
-    .navbar{
-      padding: 0.5rem 2rem;
-    }
-    .nav-logo img{
-    height:4rem;
-    }
-    .nav-list{
-      display: none;
-    }
-    .nav-login{
-      display: none;
-    }
-    .menu-mobile-icon{
-      align-items: center;
-      display: flex;
-    }
+/* responsividade inicio */
+
+@media screen and (max-width: 898px) {
+  .nav-logo img {
+    height: 4rem;
+  }
+  .nav-link {
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-login {
+    display: none;
+  }
+  .menu-mobile-icon {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+  }
+  .menu-mobile-icon button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .menu-mobile .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  .menu-mobile .nav-login {
+    display: grid;
+    padding: 1rem 2rem;
   }
 
+  .menu-mobile btn {
+    margin: 0px;
+    width: 100%;
+  }
+  .open {
+    display: block;
+  }
+}
 
-
-  /* responsividade fim */
+/* responsividade fim */
