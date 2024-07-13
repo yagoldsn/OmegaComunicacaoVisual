@@ -97,13 +97,13 @@ footer {
 #footer_content {
   background-color: var(--color-meio);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 2rem 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem 0.5rem;
 }
 
 #footer_contacts img {
   height: 3rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.4rem;
 }
 #footer_social_media {
   display: flex;
@@ -136,10 +136,17 @@ footer {
   background-color: #25d366;
 }
 .footer-list{
-  display: flex;/*comportamento de linha*/
-  flex-direction: column;/*altera o comportamento para coluna*/
-  gap: 0.75rem;
+  /* display: flex; comportamento de linha
+  flex-direction: column;altera o comportamento para coluna */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.4rem;
   list-style: none;
+}
+.footer-produtos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .footer-list .footer-link{
   color:var(--color-neutral-30);
@@ -152,7 +159,7 @@ footer {
 #footer_subscribe{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 #footer_subscribe p{
   color: var(--color-neutral-30);
@@ -184,10 +191,10 @@ footer {
 #footer_copyright{
   background-color: var(--color-neutral-10);
   display: flex;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: bold;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 0.10rem;
 }
 /* FIM STILO FOOTER */
 
