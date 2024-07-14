@@ -277,16 +277,7 @@ footer {
     flex-direction: column;
     justify-content: normal;
   }
-  /* .footer-produtos li {
-    align-items: normal;
-    list-style: none;
-  } */
-}
-@media screen and (max-width: 300px) {
-  #footer_content {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 3rem 2rem;
-  }
+  
 }
 /* fim footer */
 
