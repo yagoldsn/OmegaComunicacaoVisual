@@ -22,6 +22,7 @@ app.get('/', (req, res)=>{
   res.render('home');
 })
 
+
 //CONFIGURAÇÕES SERVIDOR
 const PORT = 2000;
 app.listen(PORT, () => {
