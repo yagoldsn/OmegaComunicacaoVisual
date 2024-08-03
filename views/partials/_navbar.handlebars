@@ -9,7 +9,17 @@
   <div class="nav-list">
     <ul>
       <li class="nav-item"><a href="#" class="nav-link">Página Inicial</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
+      <li class="nav-item dropdown"><a href="#" class="nav-link">Produtos</a>
+        <div class="dropdown-content">
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Brindes</a></li>
+            <li><a class="dropdown-item" href="#">Sacolas</a></li>
+          </ul>
+          
+         
+        </div>
+      </li>
+      
       <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
     </ul>
   </div>
@@ -23,18 +33,36 @@
       <i class="fa-solid fa-bars"></i>
     </button>
   </div>
-    <ul>
-
 </div>
-  <div class="menu-mobile">
-    <ul>
-      <li class="nav-item"><a href="paginaincial" onclick="menuShow()" class="nav-link">Página Inicial</a></li>
-      <li class="nav-item"><a href="produtos" onclick="menuShow()" class="nav-link">Produtos</a></li>
-      <li class="nav-item"><a href="sobre" onclick="menuShow()" class="nav-link">Quem Somos</a></li>
-    </ul>
-    <div class="nav-login">
-      <a name="" id="" class="btn btn-primary" href="#" role="button">
-        Entrar
-      </a>
+<div class="menu-mobile">
+  <ul>
+    <li class="nav-item"><a
+        href="paginaincial"
+        onclick="menuShow()"
+        class="nav-link"
+      >Página Inicial</a></li>
+    <div class="dropdown-center dropdown-mobile">
+      <button
+        class="btn dropdown-toggle"
+        type="button"
+        id="triggerId"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Produtos
+      </button>
+      <div class="dropdown-menu" aria-labelledby="triggerId">
+        <a class="dropdown-item" href="#">Brindes</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Sacolas</a>
+      </div>
     </div>
+    <li class="nav-item"><a href="sobre" class="nav-link">Quem Somos</a></li>
+  </ul>
+  <div class="nav-login">
+    <a name="" id="" class="btn btn-primary" href="#" role="button">
+      Entrar
+    </a>
   </div>
+</div>

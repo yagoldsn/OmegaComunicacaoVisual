@@ -43,6 +43,7 @@ main {
 .nav-list {
   align-items: center;
   display: flex;
+  margin-top: 1rem;
 }
 .nav-list ul {
   display: flex;
@@ -81,6 +82,72 @@ main {
 }
 .menu-mobile .nav-login {
   display: grid;
+}
+
+/* INICIO STILO DROPDOWN MOBILE*/
+.dropdown-mobile button {
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  /* height: 2rem; */
+  padding: 0.5rem;
+}
+.dropdown-mobile button:hover {
+  color: white;
+}
+.dropdown-mobile .dropdown-menu{
+  background-color: mediumblue;
+  border-color: white;
+  border-width: 0.2rem;
+  box-shadow: 0px 3px 10px var(--color-secundary);
+  width: 70vw;
+}
+
+.dropdown-mobile .dropdown-menu a{
+  color: white;
+}
+
+.dropdown-mobile .dropdown-menu .dropdown-divider{
+  background-color: white;
+}
+
+
+/*FIM STILO DROPDOWN MOBILE*/
+
+/* Estilo para o submenu dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-menu{
+  align-items: center;
+  background-color: mediumblue;
+  box-shadow: 0px 8px 16px 0px var(--color-secundary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown-content a {
+  color: white;
+  display: block;
+  padding: 8px 50px;
+  text-decoration: none;
+  
+}
+.dropdown-content li{
+  border-bottom: 1px solid white;
+}
+.dropdown-content li:last-child {/*tirando a borda do ultimo item da lista*/
+  border-bottom: none;  
+}
+
+/* Mostrar o submenu quando o item de menu é hover */
+.navbar ul li:hover .dropdown-content {
+  display: block;
 }
 
 /* FIM STILO NAVBAR */
@@ -210,7 +277,7 @@ footer {
   .nav-logo img {
     height: 4rem;
   }
-  .navbar{
+  .navbar {
     padding: 1rem 3rem;
   }
 }
@@ -222,15 +289,15 @@ footer {
   .nav-link {
     font-size: 1rem;
   }
-  .navbar{
+  .navbar {
     padding: 1rem 3rem;
   }
-  .nav-item{
+  .nav-item {
     /* margin: 0 4px; */
   }
 }
 @media screen and (max-width: 770px) {
-  .navbar{
+  .navbar {
     padding: 1rem 2rem;
   }
 }
@@ -239,18 +306,17 @@ footer {
     height: 3rem;
   }
 }
-@media screen and (max-width: 710px) { 
+@media screen and (max-width: 710px) {
   .nav-link {
     font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 675px) {
-  
   .navbar {
     padding: 0.2rem 1.5rem;
   }
-  .nav-item{
+  .nav-item {
     margin: 0 4px;
   }
 }
@@ -280,15 +346,14 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-top: 1.4rem;
   }
   .menu-mobile .nav-item {
     display: block;
-    padding-top: 1.2rem;
   }
   .menu-mobile .nav-login {
     display: grid;
-    padding: 1rem 2rem;
+    padding: 0.3rem 2rem;
   }
 
   .menu-mobile btn {
@@ -298,6 +363,7 @@ footer {
   .open {
     display: block;
   }
+
   /* fim navbar */
 }
 /* inicio footer */
@@ -317,7 +383,6 @@ footer {
     flex-direction: column;
     justify-content: normal;
   }
-  
 }
 /* fim footer */
 
